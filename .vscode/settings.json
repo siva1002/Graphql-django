@@ -1,0 +1,12 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none",
+    "workbench.preferredDarkColorTheme": "Bluloco Dark",
+    "workbench.preferredHighContrastColorTheme": "codeSTACKr Theme",
+    "astro.language-server.ls-path": "",
+    "astro.trace.server": "off",
+    "files.autoSave": "afterDelay",
+    "workbench.activityBar.visible": true
+}
