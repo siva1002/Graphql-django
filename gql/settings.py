@@ -40,9 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "corsheaders",
+    # "django-filter",
     'graphene_django',
     'core',
-    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -116,12 +117,6 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-
-JWT_AUTH = {
-    'JWT_PAYLOAD_HANDLER':
-        'core.utils.jwt_payload_handler',
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
