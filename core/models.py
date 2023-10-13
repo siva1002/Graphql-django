@@ -15,3 +15,6 @@ class Album(models.Model):
     name = models.CharField(max_length=100)
     release_date = models.DateField(auto_now=True)
     num_stars = models.IntegerField(default=0)
+
+    def __str__(self) -> str :
+        return f"{self.artist.first_name} {self.artist.last_name}-{self.name}"
